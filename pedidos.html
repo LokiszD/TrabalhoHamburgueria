@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Indecisos Burger: Pedido</title>
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet"/>
+    <link href="site.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script src="pedido.js"> </script>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+        <ul>
+          <li style="float:left"><a class="active" href="index.html">Indeciso Burger? </a></li>
+          <li><a class="active1" href="#HOME" >Home</a></li>
+          <li><a class="active1" href="#PEDIDO">Sugestões</a></li>
+        </ul>
+        </nav>
+        </header>
+        </br>
+        <p id="Data" class="center"></p></br>
+        <form id="formulario" class="center" action="enviado.html" method="GET" required>
+          
+
+       
+              <label for="valorCompra" id="valor_final">Valor Final: R$ </label>
+              
+              </br>
+              
+       
+              <label for="valorPago" >Valor pago:</label>
+              <input type="text" id="valorPago" name="valorPago" /><br /><br />
+       
+              <button type="button" id="button" onclick="calculaTroco()">Calcular troco</button><br /><br />
+       
+              <label for="valorTroco" >Valor do troco:</label>
+              <input type="text" id="valorTroco" name="valorTroco" readonly/><br /><br />        
+              <input type="submit" value="Enviar pedido"/>
+       </form>
+       
+</body>
+</html>

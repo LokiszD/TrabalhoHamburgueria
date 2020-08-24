@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+    <link href="site.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script src="cartao.js"></script>
+    <link rel="stylesheet" href="cartao.css">
+    <title>Pagamento: Cartão</title>
+
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+          <li style="float:left"><a class="active" href="index.html">Indeciso Burger? </a></li>
+          <li><a class="active1" href="#HOME" >Home</a></li>
+          <li><a class="active1" href="#PEDIDO">Sugestões</a></li>
+        </ul>
+        </nav>
+        </header>
+        </br>
+        <p id="Data" class="center"></p></br>
+
+        <form id="formulario" class="center" action="enviado.html" method="GET" required>
+            
+            </br>
+
+            <h1 class="title animated fadeInUp">Método: Cartão</h1>
+            <select name="lanches" id="lanches" required>
+                <option value="1">Débito</option>
+                <option value="2">Crédito</option>
+            </select>
+            </br>
+            <label for="valorCompra" id="valor_final" >Valor Final: R$ </label>
+
+            <div class="wrapper animated fadeInUp">
+                 <button id="val" class="material" onclick href="entrega.html">Pagar lanchinho</button>
+             </div>  
+         </form>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Indecisos Burger</title>
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+    <link href="navbar.css" rel="stylesheet"/>
+    <link href="site.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script src="index.js"> </script>
+</head>
+<body>
+    <header>
+    
+    <nav class="nav">
+    <ul>
+      <li style="float:left"><a class="active">Indeciso Burger? </a></li>
+      <li><a class="active1" href="#HOME" >Home</a></li>
+      <li><a class="active1" href="#PEDIDO">Faça seu Pedido</a></li>
+    </ul>
+    </nav>
+    </header>
+
+    
+        <main class="main"></br>
+        <p id="Data"></p>
+        </br>
+        <div class="fora">
+                <div class="container">
+                    <img src="imagem/monstro.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text">3 Hamburgers com muito cheddar e bacon </div>
+                    </div>
+                    <p>Não sei qual pedir Burger </br> R$35,00</p>
+                  </div>
+            
+        </div>
+        
+        <div class="fora">
+            <div class="container">
+                <img src="imagem/vegano.jpg" width=350 height=350 alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hamburger de lentilha com rúcula, cebola roxa e pimentão </div>
+                </div>
+                <p>O mesmo que o dele Burger</br> R$25,00</p>
+              </div>
+        
+        </div>
+
+        <div class="fora">
+            <div class="container">
+                <img src="imagem/batatinha.jpg"  alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Nosso famoso Burger de Sushi</div>
+                </div>
+                <p>Sushi Burger </br> R$40,00</p>
+              </div>
+        
+    </div>
+
+        <div>
+            <img src="imagem/logo_size_invert.jpg">
+        </div>
+         
+        <h1 class="center main-title"><a name="PEDIDO"></a>
+            Monte seu Pedido:
+        </h1>
+            <section>
+                <h2 class="center"> Tá indeciso? A gente te ajuda</h2></br>
+            
+            </section>
+            <form class="center" id="form1" method="post">
+                <input class="nome" type="text" name="nome" placeholder="Digite seu Nome:" required>
+                <input class="nome" type="text" name="sobrenome" placeholder="Digite seu Sobrenome:" required>
+            
+            </br></br>
+            <section id="lanches">
+                <h3>
+                   Lanches
+                </h3>
+
+                
+                <input onchange="attvalor()" type="radio" name="lanches" value="1" id="lanches" required>Não sei qual pedir Burger<br>    
+                <input onchange="attvalor()" type="radio" name="lanches" value="2" id="lanches">O mesmo que o dele Burger<br>
+                <input onchange="attvalor()" type="radio" name="lanches" value="3" id="lanches">Sushi Burger<br>
+                    
+               
+            </section>
+        </br> 
+
+        <section id="carne">
+            <h3>
+               Ponto da carne
+            </h3>
+
+            
+                <label for="cars">Decida seu lanche!</label>
+                <select name="lanches" id="lanches" required>
+                    <option value="1">Ao ponto</option>
+                    <option value="2">Bem passado</option>
+                    <option value="3">Mal passado </option>
+                    <option value="4">Não sei (aleatório) </option>
+                </select>
+
+                
+           
+        </section>
+
+            <section id="ingredientes" class="inline-block" >
+                <h3>
+                    Adicionais: 
+                </h3>
+               
+                    <input onchange="attvalor()" type="checkbox" name="ingrediente[]" value="Mussarela">Bacon<br>
+                    <input onchange="attvalor()" type="checkbox" name="ingrediente[]" value="Calabresa">Queijo Prato<br>
+                    <input onchange="attvalor()" type="checkbox" name="ingrediente[]" value="Requeijao">Cheedar<br>
+                    <input onchange="attvalor()" type="checkbox" name="ingrediente[]" value="Frango">Maionese da casa<br>
+                    <input onchange="attvalor()" type="checkbox" name="ingrediente[]" value="Milho">Catupiry<br>
+                    <input onchange="attvalor()" type="checkbox" name="ingrediente[]" value="Bacon">Molho Apimentado</br>
+                    <input onchange="attvalor()" type="checkbox" name="ingrediente[]" value="Bacon">Shoyu Moio</br>
+               
+            </section>
+
+            
+
+            <section class="inline-block">
+                <h3>
+                     Bebidas:
+                </h3>
+                <input onchange="attvalor()" type="radio" name="bebida" value="dolly" id="bebida" required >Dolly<br>    
+                <input onchange="attvalor()" type="radio" name="bebida" value="coquinha" id="bebida">Coquinha Gelada<br>
+                <input onchange="attvalor()" type="radio" name="bebida" value="pepsi" id="bebida">Pepsi<br>
+                <input onchange="attvalor()" type="radio" name="bebida" value="sasuke" id="bebida">Saske<br>
+            
+        </section>
+
+            
+        
+        <section>
+        
+            <h1>Valor final : R$ <span id="teste"><span></h1></br>
+
+                <h1>Escolha o método de pagamento</h1>
+        </section> 
+        </br>
+        <p><a href="pedidos.html" target="_blank" class="linkoff">Dinheiro</a></p></br>
+        <p><a href="cartao.html" target="_blank" class="linkoff">CARTÃO</a></p>
+    </form> </Br>
+    
+    </main>
+</body>
+</html>
+
+
+
